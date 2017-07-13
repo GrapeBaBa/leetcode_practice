@@ -11,7 +11,7 @@ class ListNode3 {
 
 public class A2 {
     // 1.Dummy node
-    // 2.
+    // 2.Last digit carry not missing
     public ListNode3 addTwoNumbers(ListNode3 l1, ListNode3 l2) {
         ListNode3 head1 = l1;
         ListNode3 head2 = l2;
