@@ -4,19 +4,6 @@ import java.util.Deque;
 import java.util.LinkedList;
 import java.util.Queue;
 
-/**
- * Definition for a binary tree node.
- */
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}
-
 public class A226 {
     //BFS
     public TreeNode invertTree(TreeNode root) {

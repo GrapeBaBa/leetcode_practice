@@ -5,19 +5,6 @@ import java.util.List;
 
 
 /**
- * Definition for a binary tree node.
- */
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}
-
-/**
  * Created by grapebaba on 10/25/17.
  */
 public class A257 {

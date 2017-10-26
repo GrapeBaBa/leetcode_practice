@@ -1,20 +1,10 @@
 package me.grapebaba;
 
-
-class ListNode2 {
-    int val;
-    ListNode2 next;
-
-    ListNode2(int x) {
-        val = x;
-    }
-}
-
 public class A206 {
-    public ListNode2 reverseList(ListNode2 head) {
-        ListNode2 prev = null;
+    public ListNode reverseList(ListNode head) {
+        ListNode prev = null;
         while (head != null) {
-            ListNode2 next = head.next;
+            ListNode next = head.next;
             head.next = prev;
             prev = head;
             head = next;
@@ -23,12 +13,12 @@ public class A206 {
         return prev;
     }
 
-    public ListNode2 reverseList1(ListNode2 head) {
+    public ListNode reverseList1(ListNode head) {
         if (head == null || head.next == null) {
             return head;
         }
 
-        ListNode2 reversed = reverseList1(head.next);
+        ListNode reversed = reverseList1(head.next);
         head.next.next = head;
         head.next = null;
 
